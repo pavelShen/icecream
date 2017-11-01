@@ -1,0 +1,122 @@
+.ice-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 6px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: color .2s linear,background-color .2s linear,border .2s linear;
+  color: #495060;
+  background-color: #f7f7f7;
+  border-color: #dddee1;
+  outline:0;
+  &:hover {
+    color: #57a3f3;
+    background-color: #fff;
+    border-color: #57a3f3;
+  }
+}
+
+.ice-btn-primary {
+  color: #fff;
+  background-color: #2d8cf0;
+  border-color: #2d8cf0;
+  &:hover {
+    color: #fff;
+    background-color: #57a3f3;
+    border-color: #57a3f3
+  }
+}
+
+.ice-btn-ghost {
+  color: #495060;
+  background-color: transparent;
+  border-color: #dddee1;
+  &:hover {
+    color: #57a3f3;
+    background-color: transparent;
+    border-color: #57a3f3;
+  }
+}
+
+.ice-btn-dashed {
+  color: #495060;
+  background-color: transparent;
+  border-color: #dddee1;
+  border-style: dashed;
+  &:hover {
+    color: #57a3f3;
+    background-color: transparent;
+    border-color: #57a3f3;
+  }
+}
+
+.ice-btn-text {
+  color: #495060;
+  background-color: transparent;
+  border-color: transparent;
+  &:hover {
+    color: #57a3f3;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+
+.ice-btn-info {
+  color: #fff;
+  background-color: #2db7f5;
+  border-color: #2db7f5;
+  &:hover {
+    color: #fff;
+    background-color: #57c5f7;
+    border-color: #57c5f7;
+  }
+}
+
+.ice-btn-success {
+  color: #fff;
+  background-color: #19be6b;
+  border-color: #19be6b;
+  &:hover {
+    color: #fff;
+    background-color: #47cb89;
+    border-color: #47cb89;
+  }
+}
+
+.ice-btn-warning {
+  color: #fff;
+  background-color: #f90;
+  border-color: #f90;
+  &:hover {
+    color: #fff;
+    background-color: #ffad33;
+    border-color: #ffad33;
+  }
+}
+
+.ice-btn-error {
+  color: #fff;
+  background-color: #ed3f14;
+  border-color: #ed3f14;
+  &:hover {
+    color: #fff;
+    background-color: #f16543;
+    border-color: #f16543;
+  }
+}
+

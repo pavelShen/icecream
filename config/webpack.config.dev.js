@@ -16,4 +16,4 @@ const devConfig = {
     port: 9000,
   },
 }
-module.exports = merge(webpackBase,devConfig);
+module.exports = merge(webpackBase, devConfig)

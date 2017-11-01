@@ -5,8 +5,8 @@ const merge = require('webpack-merge')
 
 const buildConfig = {
   entry: path.resolve(__dirname, '../index.js'),
-  // plugins: [
-  //   new webpack.optimize.UglifyJsPlugin(),
-  // ],
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
+  ],
 }
 module.exports = merge(webpackBase,buildConfig);
