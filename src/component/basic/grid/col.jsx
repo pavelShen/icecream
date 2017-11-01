@@ -32,12 +32,12 @@ Col.propTypes = {
   gutter: PropTypes.number, // row中获取，左右间距
   order: PropTypes.number, // flex 布局顺序
   customClass: PropTypes.string,
-};
+}
 
 Col.defaultProps = {
   gutter: 0,
   order: 0,
   customClass : '',
-};
+}
 
-module.exports = Col
+export default Col

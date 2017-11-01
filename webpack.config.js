@@ -1,43 +1,12 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
-const webpack = require('webpack'); //to access built-in plugins
-const path = require('path');
+const process = require('process')
+const devConfig = require('./config/webpack.config.dev.js')
+const buildConfig = require('./config/webpack.config.build.js')
 
-const config = {
-  entry: path.resolve(__dirname, 'index.js'),
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
-  },
-  resolve: {
-    extensions: ['.js', '.json', '.jsx', '.css'],
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js[x]$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env'],
-            plugins: ["transform-react-jsx"]
-          }
-        }
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
-        ]
-      }
-    ]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-    new HtmlWebpackPlugin({template: './example/index.html'})
-  ]
-};
+let config
+if (process.env.NODE_ENV === 'production') {
+  config = buildConfig
+} else {
+  config = devConfig
+}
 
-module.exports = config;
+module.exports = config

@@ -1,8 +1,9 @@
 import Row from './row'
 import Col from './col'
-require ('./style')
+
+require('./style.css')
 
 module.exports = {
   Row,
-  Col
+  Col,
 }

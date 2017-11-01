@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Row, Col } from './src/component/basic/grid/main'
-import { Button } from './src/component/basic/button/main'
+import { Row, Col } from '../src/component/basic/grid/main'
 
-require('./src/component/common')
+require('../src/component/common')
 
 class App extends React.Component {
   render() {
@@ -63,10 +62,10 @@ class App extends React.Component {
         </Row>
         <p>子元素分散排列</p>
         <Row type="flex" justify="space-around">
-            <Col span={4}>col-4</Col>
-            <Col span={4}>col-4</Col>
-            <Col span={4}>col-4</Col>
-            <Col span={4}>col-4</Col>
+          <Col span={4}>col-4</Col>
+          <Col span={4}>col-4</Col>
+          <Col span={4}>col-4</Col>
+          <Col span={4}>col-4</Col>
         </Row>
         <hr />
         

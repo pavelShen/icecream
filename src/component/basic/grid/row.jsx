@@ -43,4 +43,4 @@ Row.defaultProps = {
   customClass : ''
 };
 
-module.exports = Row
+export default Row
