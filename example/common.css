@@ -1,3 +1,8 @@
+pre{
+  background:#CCC;
+  border:1px dashed #333;
+  padding:10px;
+}
 .wrapper{
   display:flex;
 }

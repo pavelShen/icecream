@@ -7,7 +7,7 @@ react-ui组件库
 ## Todo
 
 #### basic
-- ~~Grid 栅格~~
+- ~~Grid 栅格~~ 文档补全
 - Layout 布局
 - ~~Color 色彩~~
 - ~~Font  字体~~

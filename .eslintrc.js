@@ -9,6 +9,7 @@ module.exports = {
   ],
   "rules":{
     "semi": [2, "never"],
+    "arrow-body-style": ["error", "always"],
     "react/prefer-stateless-function": 0
   }
 }

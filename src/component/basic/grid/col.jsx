@@ -2,24 +2,21 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class Col extends Component {
-  constructor(props){
-    super(props)
-  }
-  render(){
+  render() {
     const colStyle = {
-      margin: `0 ${this.props.gutter/2}px`,
-      order: this.props.order
+      margin: `0 ${this.props.gutter / 2}px`,
+      order: this.props.order,
     }
 
     const className = {
       span: this.props.span ? `ice-col-span-${this.props.span}` : '',
-      customClass : this.props.customClass,
+      customClass: this.props.customClass,
     }
 
     return (
-      <div 
-        className={`ice-col ${className.span} ${className.customClass}` } 
-        style={ colStyle }
+      <div
+        className={`ice-col ${className.span} ${className.customClass}`}
+        style={colStyle}
       >
         { this.props.children }
       </div>
@@ -32,12 +29,15 @@ Col.propTypes = {
   gutter: PropTypes.number, // row中获取，左右间距
   order: PropTypes.number, // flex 布局顺序
   customClass: PropTypes.string,
+  children: PropTypes.node,
 }
 
 Col.defaultProps = {
+  span: 0,
   gutter: 0,
   order: 0,
-  customClass : '',
+  customClass: '',
+  children: '',
 }
 
 export default Col

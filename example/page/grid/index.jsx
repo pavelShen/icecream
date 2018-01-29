@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent */
 import React from 'react'
 import { Row, Col } from '../../../src/component/basic/grid/main'
 
@@ -12,6 +13,13 @@ class Grid extends React.Component {
           <Col span={12}>col-12</Col>
           <Col span={12}>col-12</Col>
         </Row>
+
+        <pre>
+{`<Row gutter={16}>
+  <Col span={6} order={2}>col-6</Col>
+  <Col span={6} order={1}>col-6</Col>
+</Row>`}
+        </pre>
         <hr />
 
         <h3>gutter内边距</h3>
@@ -19,6 +27,12 @@ class Grid extends React.Component {
           <Col span={6} order={2}>col-6</Col>
           <Col span={6} order={1}>col-6</Col>
         </Row>
+<pre>
+{`<Row gutter={16}>
+  <Col span={6} order={2}>col-6</Col>
+  <Col span={6} order={1}>col-6</Col>
+</Row>`}
+</pre>
         <hr />
 
         <h3>flex布局 order</h3>

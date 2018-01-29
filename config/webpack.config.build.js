@@ -9,4 +9,4 @@ const buildConfig = {
     new webpack.optimize.UglifyJsPlugin(),
   ],
 }
-module.exports = merge(webpackBase,buildConfig);
+module.exports = merge(webpackBase, buildConfig)
